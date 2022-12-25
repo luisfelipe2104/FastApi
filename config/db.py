@@ -7,12 +7,12 @@ engine = create_engine("sqlite:///database.sqlite3")  # sqlite:///database.db
 # engine.execute("CREATE TABLE IF NOT EXISTS users")
 meta = MetaData()
 conn = engine.connect()
-engine.execute("""CREATE TABLE users (
-      id integer primary key autoincrement,
-     name text,
-      email text,
-      password text
-   );""")
+# engine.execute("""CREATE TABLE users (
+#       id integer primary key autoincrement,
+#      name text,
+#       email text,
+#       password text
+#    );""")
 
 
 """
